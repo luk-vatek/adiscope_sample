@@ -27,6 +27,9 @@ end
 
 target 'Adiscope_Sample' do
   config = use_native_modules!
+  
+  pod 'AdiscopeMediaAppLovin', '3.9.0'
+  pod 'AdiscopeMediaMax', '3.9.1'
 
   use_react_native!(
     :path => config[:reactNativePath],
